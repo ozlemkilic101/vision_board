@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aesthetic Vision Board</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Cropper.js CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="loading">
+  <div class="spinner"></div>
+  <p>Panonuz Hazırlanıyor...</p>
+</div>
+
+<!-- Kırpma Modalı -->
+<div id="cropModal">
+    <div class="crop-container">
+        <img id="cropImage" src="">
+    </div>
+    <div class="crop-actions">
+        <button id="saveCropBtn" class="btn-accent">Kırpmayı Uygula</button>
+        <button id="cancelCropBtn" class="btn-secondary">İptal</button>
+    </div>
+</div>
+
+<header>
+  <div class="logo">Vision<span>Board</span></div>
+  <div class="actions">
+  <button id="shareBtn" class="btn-accent">Paylaş ✨</button>
+  <button id="exportBtn" class="btn-secondary">Görüntüyü İndir</button>
+  <button id="clearBtn" class="btn-danger">Temizle</button>
+</div>
+</header>
+
+<main>
+  <aside class="sidebar">
+    <section>
+      <h3>Görsel Yükle</h3>
+      <label for="uploadInput" class="custom-file-upload">Bilgisayardan Seç</label>
+      <input type="file" id="uploadInput" multiple accept="image/*" />
+    </section>
+
+    <section>
+      <h3>Hazır Görseller</h3>
+          <div class="presets">
+            <img src="assets\1.jpg" class="preset-img" title="">
+            <img src="assets\2.jpg" class="preset-img" title="">
+            <img src="assets\3.jpg" class="preset-img" title="">
+            <img src="assets\4.jpg" class="preset-img" title="">
+            <img src="assets\5.jpg" class="preset-img" title="">
+            <img src="assets\6.jpg" class="preset-img" title="">
+            <img src="assets\7.jpg" class="preset-img" title="">
+            <img src="assets\8.jpg" class="preset-img" title="">
+            <img src="assets\9.jpg" class="preset-img" title="">
+            <img src="assets\11.jpg" class="preset-img" title="">
+            <img src="assets\12.jpg" class="preset-img" title="">
+            <img src="assets\13.jpg" class="preset-img" title="">
+            <img src="assets\14.jpg" class="preset-img" title="">
+            <img src="assets\15.jpg" class="preset-img" title="">
+            <img src="assets\16.jpg" class="preset-img" title="">
+            <img src="assets\17.jpg" class="preset-img" title="">
+            <img src="assets\18.jpg" class="preset-img" title="">
+            <img src="assets\19.jpg" class="preset-img" title="">
+            <img src="assets\20.jpg" class="preset-img" title="">
+            <img src="assets\21.jpg" class="preset-img" title="">
+            <img src="assets\22.jpg" class="preset-img" title="">
+            <img src="assets\23.jpg" class="preset-img" title="">
+            <img src="assets\24.jpg" class="preset-img" title="">
+            <img src="assets\25.jpg" class="preset-img" title="">
+            <img src="assets\26.jpg" class="preset-img" title="">
+            <img src="assets\27.jpg" class="preset-img" title="">
+            <img src="assets\28.jpg" class="preset-img" title="">
+            <img src="assets\29.jpg" class="preset-img" title="">
+            <img src="assets\30.jpg" class="preset-img" title="">
+            <img src="assets\31.jpg" class="preset-img" title="">
+            <img src="assets\32.jpg" class="preset-img" title="">
+            <img src="assets\33.jpg" class="preset-img" title="">
+            <img src="assets\34.jpg" class="preset-img" title="">
+            <img src="assets\35.jpg" class="preset-img" title="">
+            <img src="assets\36.jpg" class="preset-img" title="">
+            <img src="assets\37.jpg" class="preset-img" title="">
+            <img src="assets\38.jpg" class="preset-img" title="">
+            <img src="assets\39.jpg" class="preset-img" title="">
+            <img src="assets\40.jpg" class="preset-img" title="">
+            <img src="assets\41.jpg" class="preset-img" title="">
+            <img src="assets\42.jpg" class="preset-img" title="">
+
+          </div>
+    </section>
+  </aside>
+
+  <div id="canvas-container">
+   <div id="canvas">
+    <div class="canvas-placeholder">Görselleri buraya tıklayarak ekle veya sürükle</div>
+    <div class="watermark">created via <span>myvra</span></div>
+</div>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<!-- Cropper.js JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
